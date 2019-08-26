@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="15dp">
+
+            <TextView
+                android:text="------------------  "
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#fff3f3f3"
+                android:layout_weight="4"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:text="支付方式"
+                android:layout_width="0dp"
+                android:textSize="13sp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="  ------------------"
+                android:textColor="#fff3f3f3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="1dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="10dp"
+            android:background="@color/white"
+            style="@style/gray_line_layout" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_weixin"
+            style="@style/layout_height">
+
+            <TextView
+                android:drawableLeft="@mipmap/wechat"
+                android:drawablePadding="8dp"
+                style="@style/layout_size_color_marginleft"
+                android:layout_centerVertical="true"
+                android:text="微信支付" />
+
+            <ImageView
+                android:id="@+id/iv_weixin"
+                android:src="@mipmap/check"
+                android:layout_width="wrap_content"
+                style="@style/set_user_info"
+                android:singleLine="true"
+                android:text="1小时10分钟" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_zhifubao"
+            style="@style/layout_height">
+
+            <TextView
+                android:drawableLeft="@mipmap/zhifubao"
+                android:drawablePadding="8dp"
+                style="@style/layout_size_color_marginleft"
+                android:layout_centerVertical="true"
+                android:text="支付宝支付" />
+
+            <ImageView
+                android:id="@+id/iv_zhifubao"
+                android:src="@mipmap/check_2"
+                android:layout_width="wrap_content"
+                style="@style/set_user_info"
+                android:singleLine="true"
+                android:text="1小时10分钟" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yue"
+        style="@style/layout_height">
+
+        <TextView
+            android:drawableLeft="@mipmap/zhifubao"
+            android:drawablePadding="8dp"
+            style="@style/layout_size_color_marginleft"
+            android:layout_centerVertical="true"
+            android:text="余额支付" />
+
+        <ImageView
+            android:id="@+id/iv_yue"
+            android:src="@mipmap/check_2"
+            android:layout_width="wrap_content"
+            style="@style/set_user_info"
+            android:singleLine="true"
+            android:text="1小时10分钟" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_addcar"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:text="确认并提交"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/lo_in"
+                android:layout_width="258dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+</LinearLayout>

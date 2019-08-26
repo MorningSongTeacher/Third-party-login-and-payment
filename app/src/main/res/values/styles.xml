@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 灰色线 -->
+    <style name="gray_line_layout">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <!-- 一行的布局 -->
+    <style name="layout_height">
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_layout</item>
+    </style>
+
+    <!-- 最左边的控件 ，两列、三列通用 -->
+    <style name="layout_size_color_marginleft">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/general_txt_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--个人信息设置-->
+    <style name="set_user_info">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txt_label_black</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+</resources>
